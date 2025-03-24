@@ -20,6 +20,16 @@ const ADDproduct = () => {
                    </select>
 
                 </div>
+                {/* img url */}
+                <div>
+                    <label className='text-sm font medium block text-gray-600'>image URL</label>
+                    <input type="text" name='image' id='image' placeholder='https//:' className='w-full bg-gray-50 text-black mt-1 p-2 rounded-lg border focus:outline focus:ring-1 focus:ring-indigo-500' />
+                </div>
+                {/* price */}
+                <div>
+                    <label className='text-sm font medium block text-gray-600'>price</label>
+                    <input type="number" name='price' id='price' placeholder='price' className='w-full bg-gray-50 text-black mt-1 p-2 rounded-lg border focus:outline focus:ring-1 focus:ring-indigo-500' />
+                </div>
             </form>
             
         </div>
