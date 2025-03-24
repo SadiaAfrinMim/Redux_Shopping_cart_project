@@ -26,10 +26,17 @@ const ADDproduct = () => {
                     <input type="text" name='image' id='image' placeholder='https//:' className='w-full bg-gray-50 text-black mt-1 p-2 rounded-lg border focus:outline focus:ring-1 focus:ring-indigo-500' />
                 </div>
                 {/* price */}
-                <div>
+              <div className='flex items-center justify-center gap-4'>
+              <div>
                     <label className='text-sm font medium block text-gray-600'>price</label>
-                    <input type="number" name='price' id='price' placeholder='price' className='w-full bg-gray-50 text-black mt-1 p-2 rounded-lg border focus:outline focus:ring-1 focus:ring-indigo-500' />
+                    <input type="number" name='price' id='price'  className='w-full bg-gray-50 text-black mt-1 p-2 rounded-lg border focus:outline focus:ring-1 focus:ring-indigo-500' />
                 </div>
+                <div>
+                    <label className='text-sm font medium block text-gray-600'>date</label>
+                    <input type="date" name='date' id='date'  className='w-full bg-gray-50 text-black mt-1 p-2 rounded-lg border focus:outline focus:ring-1 focus:ring-indigo-500' />
+                </div>
+              </div>
+              <button type='submit btn-primary w-full'>Add Product</button>
             </form>
             
         </div>
