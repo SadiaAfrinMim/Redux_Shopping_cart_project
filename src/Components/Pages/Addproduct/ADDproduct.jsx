@@ -50,7 +50,7 @@ const ADDproduct = () => {
                     <input  {...register("date", { required: true })} type="date" name='date' id='date'  className='w-full bg-gray-50 text-black mt-1 p-2 rounded-lg border focus:outline focus:ring-1 focus:ring-indigo-500' />
                 </div>
               </div>
-              <button type='submit' className=' btn btn-primary w-full'>Add Product</button>
+              <button  type='submit' className=' btn btn-primary w-full'>Add Product</button>
             </form>
             
         </div>

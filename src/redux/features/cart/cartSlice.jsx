@@ -8,7 +8,18 @@ const cartSlice = createSlice({
     reducers:{
         addToCart:(state,action)=>{
             
-            const existingProduct = state.find((product)=>product.id===action.payload)
+            const existingProduct = state.find((product)=>product.productId===action.payload.id)
+            if(existingProduct){
+                alert("product already exists in cart")
+            }
+            else{
+                state.push({
+                 ...action.payload,
+                 id: Date.now(),
+                 quantity: 1,
+                 productId: action.payload.id
+                })
+            }
         }
     }
 })
