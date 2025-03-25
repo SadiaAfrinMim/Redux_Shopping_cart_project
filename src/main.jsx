@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import Home from './Components/Pages/home/Home.jsx'
 import { Provider } from 'react-redux'
 import store from './redux/store.js'
+import CartPage from './Components/Pages/carts/CartPage.jsx'
 
 
 createRoot(document.getElementById('root')).render(
