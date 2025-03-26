@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import { decreaseQuantity, increaseQuantity, removeFromCart } from '../../redux/features/carts/cartSlice';
+import { decreseQuantity, increaseQuatity, removeFromCart } from '../../../redux/features/cart/cartSlice';
+
 
 const CartItem = ({item}) => {
     const {id, name, price, category, image, quantity} = item || {};
@@ -10,20 +11,19 @@ const CartItem = ({item}) => {
 
     // increase handler
     const handleIncreaseQuantity = () => {
-        dispatch(increaseQuantity(id))
+      dispatch(increaseQuatity(id))
+        
     }
     // descrease handler
     const handleDecreaseQuantity = () => {
-        if(quantity > 1){
-            dispatch(decreaseQuantity(id))
-        } else{
-            handleRemoveFromCart()
-        }
+      dispatch(decreseQuantity)
+       
     }
 
     // remove from cart handler
     const handleRemoveFromCart = () => {
-        dispatch(removeFromCart(id))
+      dispatch(removeFromCart(id))
+        
     }
   return (
     <div>

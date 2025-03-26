@@ -1,10 +1,13 @@
 import React from 'react'
-import CartItem from './CartItem'
+
 import BillingPage from './BillingPage'
+import CartItem from './CartItem'
 import { useSelector } from 'react-redux'
 
+
 const CartPage = () => {
-    const carts =  useSelector((state) => state.carts)
+  const carts = useSelector((state)=>state.carts)
+   
   return (
     <div className="py-12 max-w-7xl container mx-auto px-4">
     <div className="container mx-auto">
