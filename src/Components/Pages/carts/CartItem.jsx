@@ -16,7 +16,7 @@ const CartItem = ({item}) => {
     }
     // descrease handler
     const handleDecreaseQuantity = () => {
-      dispatch(decreseQuantity)
+      dispatch(decreseQuantity(id))
        
     }
 
